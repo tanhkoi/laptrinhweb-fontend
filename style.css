@@ -4,3 +4,38 @@
 	border: 0;
 	font-size: 100%;
 }
+
+#header {
+	background: #0c0c0c;
+	color: white;
+	height: 120px;
+	padding: 0px 16px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+#header #header-page-name h1 {
+	font-size: 80px;
+}
+
+#header #header-item {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+#header #header-item #header-item-list {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	font-size: 16px;
+}
+
+#header #header-item #header-item-list .item {
+	padding: 16px;
+}
+
+#header #header-item #search {
+	
+}
