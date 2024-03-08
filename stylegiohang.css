@@ -1,0 +1,12 @@
+
+.opacity-text:active{
+    opacity: 0.5;
+}
+.fiximg{
+    max-width: 35%;
+}
+@media (max-width: 991px) {
+    .sidebar{
+        background-color: rgba(20, 18, 18, 0.448);
+    }
+}
