@@ -11,3 +11,19 @@
 .p-10percent-lefft {
   padding-left: 10% !important;
 }
+
+.mt-36 {
+	margin-top: 36px !important;
+}
+
+.opacity-text:active{
+    opacity: 0.5;
+}
+.fiximg{
+    max-width: 35%;
+}
+@media (max-width: 991px) {
+    .sidebar{
+        background-color: rgba(20, 18, 18, 0.448);
+    }
+}
