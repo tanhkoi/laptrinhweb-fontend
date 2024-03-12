@@ -1,284 +1,451 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-		<meta name="description" content="" />
-		<meta name="author" content="" />
-		<title>Demo Website</title>
-		<!-- Favicon-->
-		<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-		<!-- Bootstrap icons-->
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-		<!-- Core theme CSS (includes Bootstrap)-->
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-		<link rel="stylesheet" href="./style.css" />
-	</head>
-	<body>
-		<!-- Navigation-->
-		<nav class="navbar navbar-expand-lg navbar-light bg-light position-fixed top-0 end-0 start-0 z-3 shadow">
-			<div class="container px-4 px-lg-5">
-				<a class="navbar-brand" href="./index.html">Demo Website</a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-						<li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Trang chủ</a></li>
-						<li class="nav-item"><a class="nav-link" href="./contact.html">Liên hệ</a></li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
-							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<li><a class="dropdown-item" href="#!">Tất cả sản phẩm</a></li>
-								<li><hr class="dropdown-divider" /></li>
-								<li><a class="dropdown-item" href="#!">Sản phẩm nổi bật</a></li>
-								<li><a class="dropdown-item" href="#!">Vừa cập bến</a></li>
-							</ul>
-						</li>
-					</ul>
-					<div class="d-flex">
-						<a href="./cart.html">
-							<button class="btn btn-outline-dark" type="submit">
-								<i class="bi-cart-fill me-1"></i>
-								Giỏ hàng
-								<span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
-							</button>
-						</a>
-					</div>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+	<title>Demo Website</title>
+	<!-- Favicon-->
+	<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+	<!-- Bootstrap icons-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+	<!-- Core theme CSS (includes Bootstrap)-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+		crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+	<!-- Navigation-->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light position-fixed top-0 end-0 start-0 z-3 shadow">
+		<div class="container px-4 px-lg-5">
+			<a class="navbar-brand" href="./index.html">Demo Website</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+					<li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Trang chủ</a></li>
+					<li class="nav-item"><a class="nav-link" href="./contact.html">Liên hệ</a></li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item" href="#!">Tất cả sản phẩm</a></li>
+							<li>
+								<hr class="dropdown-divider" />
+							</li>
+							<li><a class="dropdown-item" href="#!">Sản phẩm nổi bật</a></li>
+							<li><a class="dropdown-item" href="#!">Vừa cập bến</a></li>
+						</ul>
+					</li>
+				</ul>
+				<div class="d-flex">
+					<a href="./cart.html">
+						<button class="btn btn-outline-dark" type="submit">
+							<i class="bi-cart-fill me-1"></i>
+							Giỏ hàng
+							<span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+						</button>
+					</a>
 				</div>
 			</div>
-		</nav>
-		<!-- Header-->
-		<header class="bg-dark py-5 mt-36">
-			<div id="myCarousel" class="carousel slide">
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<img src="./img/iphone-15-sliding-iphone15.webp" class="d-block w-100 rounded" alt="..." />
-					</div>
-					<div class="carousel-item">
-						<img src="./img/oppo-reno11-f-sliding-moban.webp" class="d-block w-100 rounded" alt="..." />
-					</div>
-					<div class="carousel-item">
-						<img src="./img/redmi-note13-pro-4g-sliding-111.webp" class="d-block w-100 rounded" alt="..." />
-					</div>
+		</div>
+	</nav>
+	<!-- Header-->
+	<header class="bg-dark py-5 mt-36">
+		<div id="myCarousel" class="carousel slide">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="./img/iphone-15-sliding-iphone15.webp" class="d-block w-100 rounded" alt="..." />
 				</div>
-				<button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-					<span class="carousel-control-prev-icon p-10percent-left" aria-hidden="true"></span>
-					<span class="visually-hidden">Previous</span>
-				</button>
-				<button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-					<span class="carousel-control-next-icon p-10percent-right" aria-hidden="true"></span>
-					<span class="visually-hidden">Next</span>
-				</button>
+				<div class="carousel-item">
+					<img src="./img/oppo-reno11-f-sliding-moban.webp" class="d-block w-100 rounded" alt="..." />
+				</div>
+				<div class="carousel-item">
+					<img src="./img/redmi-note13-pro-4g-sliding-111.webp" class="d-block w-100 rounded" alt="..." />
+				</div>
 			</div>
-		</header>
-		<!-- Section-->
-		<section class="py-5">
-			<div class="container px-4 px-lg-5 mt-5">
-				<div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-					<div class="col mb-5">
-						<div class="card h-100">
-							<!-- Product image-->
-							<img class="card-img-top" src="./img/iphone-11-128gb.webp" alt="..." />
-							<!-- Product details-->
-							<div class="card-body p-4">
-								<div class="text-center">
-									<!-- Product name-->
-									<h5 class="fw-bolder">iPhone 11 128GB</h5>
-									<!-- Product price-->
-									9.490.000₫
-								</div>
-							</div>
-							<!-- Product actions-->
-							<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-								<div class="text-center"><a class="btn btn-outline-dark mt-auto" href="./detail.html">Xem thêm</a></div>
-							</div>
-						</div>
-					</div>
-					<div class="col mb-5">
-						<div class="card h-100">
-							<!-- Sale badge-->
-							<div class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-							<!-- Product image-->
-							<img class="card-img-top" src="./img/iphone-11.webp" alt="..." />
-							<!-- Product details-->
-							<div class="card-body p-4">
-								<div class="text-center">
-									<!-- Product name-->
-									<h5 class="fw-bolder">iPhone 11 64GB (Quốc tế 98-99%)</h5>
-									<!-- Product reviews-->
-									<div class="d-flex justify-content-center small text-warning mb-2">
-										<div class="bi-star-fill"></div>
-										<div class="bi-star-fill"></div>
-										<div class="bi-star-fill"></div>
-										<div class="bi-star-fill"></div>
-										<div class="bi-star-fill"></div>
-									</div>
-									<!-- Product price-->
-									<span class="text-muted text-decoration-line-through"> 6.490.000₫</span>
-									<i class="text-danger">6.290.000₫</i>
-								</div>
-							</div>
-							<!-- Product actions-->
-							<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-								<div class="text-center"><a class="btn btn-outline-dark mt-auto" href="./detail.html">Xem thêm</a></div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon p-10percent-left" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+				<span class="carousel-control-next-icon p-10percent-right" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+	</header>
+	<!-- Section-->
+	<section class="py-5">
+		<div class="container px-4 px-lg-5 mt-5">
+			<div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+				<div class="col mb-5">
+					<div class="card h-100">
+						<!-- Product image-->
+						<img class="card-img-top" src="./img/iphone-11-128gb.webp" alt="..." />
+						<!-- Product details-->
+						<div class="card-body p-4">
+							<div class="text-center">
+								<!-- Product name-->
+								<h5 class="fw-bolder">iPhone 11 128GB</h5>
+								<!-- Product price-->
+								9.490.000₫
 							</div>
 						</div>
-					</div>
-					<div class="col mb-5">
-						<div class="card h-100">
-							<!-- Sale badge-->
-							<div class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-							<!-- Product image-->
-							<img class="card-img-top" src="./img/iphone-12.webp" alt="..." />
-							<!-- Product details-->
-							<div class="card-body p-4">
-								<div class="text-center">
-									<!-- Product name-->
-									<h5 class="fw-bolder">iPhone 12 64GB - Cũ Đẹp</h5>
-									<!-- Product price-->
-									<span class="text-muted text-decoration-line-through">9.590.000đ</span>
-									<i class="text-danger">9.090.000đ</i>
-								</div>
-							</div>
-							<!-- Product actions-->
-							<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-								<div class="text-center"><a class="btn btn-outline-dark mt-auto" href="./detail.html">Xem thêm</a></div>
-							</div>
-						</div>
-					</div>
-					<div class="col mb-5">
-						<div class="card h-100">
-							<!-- Product image-->
-							<img class="card-img-top" src="./img/oppo-reno-11-f-xanh-2.webp" alt="..." />
-							<!-- Product details-->
-							<div class="card-body p-4">
-								<div class="text-center">
-									<!-- Product name-->
-									<h5 class="fw-bolder">OPPO Reno11 F 5G 8GB 256GB</h5>
-									<!-- Product reviews-->
-									<div class="d-flex justify-content-center small text-warning mb-2">
-										<div class="bi-star-fill"></div>
-										<div class="bi-star-fill"></div>
-										<div class="bi-star-fill"></div>
-										<div class="bi-star-fill"></div>
-										<div class="bi-star-fill"></div>
-									</div>
-									<!-- Product price-->
-									8.990.000 đ
-								</div>
-							</div>
-							<!-- Product actions-->
-							<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-								<div class="text-center"><a class="btn btn-outline-dark mt-auto" href="./detail.html">Xem thêm</a></div>
-							</div>
-						</div>
-					</div>
-					<div class="col mb-5">
-						<div class="card h-100">
-							<!-- Sale badge-->
-							<div class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-							<!-- Product image-->
-							<img class="card-img-top" src="./img/sm-g990_s21fe_backfront_lv.webp" alt="..." />
-							<!-- Product details-->
-							<div class="card-body p-4">
-								<div class="text-center">
-									<!-- Product name-->
-									<h5 class="fw-bolder">Samsung Galaxy S21 FE 8GB 128GB</h5>
-									<!-- Product price-->
-									<span class="text-muted text-decoration-line-through">9.590.000đ</span>
-									<i class="text-danger">9.090.000₫</i>
-								</div>
-							</div>
-							<!-- Product actions-->
-							<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-								<div class="text-center"><a class="btn btn-outline-dark mt-auto" href="./detail.html">Xem thêm</a></div>
-							</div>
-						</div>
-					</div>
-					<div class="col mb-5">
-						<div class="card h-100">
-							<!-- Product image-->
-							<img class="card-img-top" src="./img/t_i_xu_ng_22__6.webp" alt="..." />
-							<!-- Product details-->
-							<div class="card-body p-4">
-								<div class="text-center">
-									<!-- Product name-->
-									<h5 class="fw-bolder">Xiaomi POCO X6 Pro 5G 8GB 256GB</h5>
-									<!-- Product price-->
-									8.190.000đ
-								</div>
-							</div>
-							<!-- Product actions-->
-							<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-								<div class="text-center"><a class="btn btn-outline-dark mt-auto" href="./detail.html">Xem thêm</a></div>
-							</div>
-						</div>
-					</div>
-					<div class="col mb-5">
-						<div class="card h-100">
-							<!-- Sale badge-->
-							<div class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-							<!-- Product image-->
-							<img class="card-img-top" src="./img/xiaomi-redmi-note-12-pro-5g.webp" alt="..." />
-							<!-- Product details-->
-							<div class="card-body p-4">
-								<div class="text-center">
-									<!-- Product name-->
-									<h5 class="fw-bolder">Xiaomi Redmi Note 12 Pro 5G</h5>
-									<!-- Product reviews-->
-									<div class="d-flex justify-content-center small text-warning mb-2">
-										<div class="bi-star-fill"></div>
-										<div class="bi-star-fill"></div>
-										<div class="bi-star-fill"></div>
-										<div class="bi-star-fill"></div>
-										<div class="bi-star-fill"></div>
-									</div>
-									<!-- Product price-->
-									<span class="text-muted text-decoration-line-through">7.490.000đ</span>
-									<i class="text-danger">6.990.000đ</i>
-								</div>
-							</div>
-							<!-- Product actions-->
-							<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-								<div class="text-center"><a class="btn btn-outline-dark mt-auto" href="./detail.html">Xem thêm</a></div>
-							</div>
-						</div>
-					</div>
-					<div class="col mb-5">
-						<div class="card h-100">
-							<!-- Product image-->
-							<img class="card-img-top" src="./img/xiaomi-redmi-note-13-pro-plus_9_.webp" alt="..." />
-							<!-- Product details-->
-							<div class="card-body p-4">
-								<div class="text-center">
-									<!-- Product name-->
-									<h5 class="fw-bolder">Xiaomi Redmi Note 13 Pro Plus 5G 8GB 256GB</h5>
-									<!-- Product reviews-->
-									<div class="d-flex justify-content-center small text-warning mb-2">
-										<div class="bi-star-fill"></div>
-										<div class="bi-star-fill"></div>
-										<div class="bi-star-fill"></div>
-										<div class="bi-star-fill"></div>
-										<div class="bi-star-fill"></div>
-									</div>
-									<!-- Product price-->
-									10.490.000đ
-								</div>
-							</div>
-							<!-- Product actions-->
-							<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-								<div class="text-center"><a class="btn btn-outline-dark mt-auto" href="./detail.html">Xem thêm</a></div>
-							</div>
+						<!-- Product actions-->
+						<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+							<div class="text-center"><a class="btn btn-outline-dark mt-auto" href="./detail.html">Xem
+									thêm</a></div>
 						</div>
 					</div>
 				</div>
+				<div class="col mb-5">
+					<div class="card h-100">
+						<!-- Sale badge-->
+						<div class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
+							Sale</div>
+						<!-- Product image-->
+						<img class="card-img-top" src="./img/iphone-11.webp" alt="..." />
+						<!-- Product details-->
+						<div class="card-body p-4">
+							<div class="text-center">
+								<!-- Product name-->
+								<h5 class="fw-bolder">iPhone 11 64GB (Quốc tế 98-99%)</h5>
+								<!-- Product reviews-->
+								<div class="d-flex justify-content-center small text-warning mb-2">
+									<div class="bi-star-fill"></div>
+									<div class="bi-star-fill"></div>
+									<div class="bi-star-fill"></div>
+									<div class="bi-star-fill"></div>
+									<div class="bi-star-fill"></div>
+								</div>
+								<!-- Product price-->
+								<span class="text-muted text-decoration-line-through"> 6.490.000₫</span>
+								<i class="text-danger">6.290.000₫</i>
+							</div>
+						</div>
+						<!-- Product actions-->
+						<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+							<div class="text-center"><a class="btn btn-outline-dark mt-auto" href="./detail.html">Xem
+									thêm</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="col mb-5">
+					<div class="card h-100">
+						<!-- Sale badge-->
+						<div class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
+							Sale</div>
+						<!-- Product image-->
+						<img class="card-img-top" src="./img/iphone-12.webp" alt="..." />
+						<!-- Product details-->
+						<div class="card-body p-4">
+							<div class="text-center">
+								<!-- Product name-->
+								<h5 class="fw-bolder">iPhone 12 64GB - Cũ Đẹp</h5>
+								<!-- Product price-->
+								<span class="text-muted text-decoration-line-through">9.590.000đ</span>
+								<i class="text-danger">9.090.000đ</i>
+							</div>
+						</div>
+						<!-- Product actions-->
+						<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+							<div class="text-center"><a class="btn btn-outline-dark mt-auto" href="./detail.html">Xem
+									thêm</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="col mb-5">
+					<div class="card h-100">
+						<!-- Product image-->
+						<img class="card-img-top" src="./img/samsung-galaxy-s21-5g-0.webp" alt="..." />
+						<!-- Product details-->
+						<div class="card-body p-4">
+							<div class="text-center">
+								<!-- Product name-->
+								<h5 class="fw-bolder">Samsung Galaxy S21 5G</h5>
+								<!-- Product price-->
+								16.990.000₫
+							</div>
+						</div>
+						<!-- Product actions-->
+						<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+							<div class="text-center"><a class="btn btn-outline-dark mt-auto" href="./detail.html">Xem
+									thêm</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="col mb-5">
+					<div class="card h-100">
+						<!-- Product image-->
+						<img class="card-img-top" src="./img/xiaomi_mi_11-pictures-10656.webp" alt="..." />
+						<!-- Product details-->
+						<div class="card-body p-4">
+							<div class="text-center">
+								<!-- Product name-->
+								<h5 class="fw-bolder">Xiaomi Mi 11</h5>
+								<!-- Product price-->
+								11.990.000₫
+							</div>
+						</div>
+						<!-- Product actions-->
+						<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+							<div class="text-center"><a class="btn btn-outline-dark mt-auto" href="./detail.html">Xem
+									thêm</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="col mb-5">
+					<div class="card h-100">
+						<!-- Product image-->
+						<img class="card-img-top" src="./img/galaxy-z-fold5-highlights-exclusive-blue.webp"
+							alt="Samsung Galaxy Z Fold 5" />
+						<!-- Product details-->
+						<div class="card-body p-4">
+							<div class="text-center">
+								<!-- Product name-->
+								<h5 class="fw-bolder">Samsung Galaxy Z Fold 5</h5>
+								<!-- Product price-->
+								32.990.000₫
+							</div>
+						</div>
+						<!-- Product actions-->
+						<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+							<div class="text-center"><a class="btn btn-outline-dark mt-auto" href="./detail.html">Xem
+									thêm</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="col mb-5">
+					<div class="card h-100">
+						<!-- Product image-->
+						<img class="card-img-top" src="./img/samsung-galaxy-z-fold4.webp"
+							alt="Samsung Galaxy Z Fold 4" />
+						<!-- Product details-->
+						<div class="card-body p-4">
+							<div class="text-center">
+								<!-- Product name-->
+								<h5 class="fw-bolder">Samsung Galaxy Z Fold 4</h5>
+								<!-- Product price-->
+								25.990.000₫
+							</div>
+						</div>
+						<!-- Product actions-->
+						<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+							<div class="text-center"><a class="btn btn-outline-dark mt-auto" href="./detail.html">Xem
+									thêm</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="col mb-5">
+					<div class="card h-100">
+						<!-- Product image-->
+						<img class="card-img-top" src="./img/Apple-iPhone-14-Pro-iPhone-14-Pro-Max-deep-purple-220907_inline.webp" alt="iPhone 14 Pro Max" />
+						<!-- Product details-->
+						<div class="card-body p-4">
+							<div class="text-center">
+								<!-- Product name-->
+								<h5 class="fw-bolder">iPhone 14 Pro Max</h5>
+								<!-- Product price-->
+								24.990.000₫
+							</div>
+						</div>
+						<!-- Product actions-->
+						<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+							<div class="text-center"><a class="btn btn-outline-dark mt-auto" href="./detail.html">Xem
+									thêm</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="col mb-5">
+					<div class="card h-100">
+						<!-- Product image-->
+						<img class="card-img-top" src="./img/iphone-15-pro-max-render.webp" alt="iPhone 15 Pro Max" />
+						<!-- Product details-->
+						<div class="card-body p-4">
+							<div class="text-center">
+								<!-- Product name-->
+								<h5 class="fw-bolder">iPhone 15 Pro Max</h5>
+								<!-- Product price-->
+								31.990.000₫
+							</div>
+						</div>
+						<!-- Product actions-->
+						<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+							<div class="text-center"><a class="btn btn-outline-dark mt-auto" href="./detail.html">Xem
+									thêm</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="col mb-5">
+					<div class="card h-100">
+						<!-- Product image-->
+						<img class="card-img-top" src="./img/samsung-galaxy-s20-xam-1-org.webp" alt="Samsung Galaxy S20" />
+						<!-- Product details-->
+						<div class="card-body p-4">
+							<div class="text-center">
+								<!-- Product name-->
+								<h5 class="fw-bolder">Samsung Galaxy S20</h5>
+								<!-- Product price-->
+								14.990.000₫
+							</div>
+						</div>
+						<!-- Product actions-->
+						<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+							<div class="text-center"><a class="btn btn-outline-dark mt-auto" href="./detail.html">Xem
+									thêm</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="col mb-5">
+					<div class="card h-100">
+						<!-- Product image-->
+						<img class="card-img-top" src="./img/oppo-reno-11-f-xanh-2.webp" alt="..." />
+						<!-- Product details-->
+						<div class="card-body p-4">
+							<div class="text-center">
+								<!-- Product name-->
+								<h5 class="fw-bolder">OPPO Reno11 F 5G 8GB 256GB</h5>
+								<!-- Product reviews-->
+								<div class="d-flex justify-content-center small text-warning mb-2">
+									<div class="bi-star-fill"></div>
+									<div class="bi-star-fill"></div>
+									<div class="bi-star-fill"></div>
+									<div class="bi-star-fill"></div>
+									<div class="bi-star-fill"></div>
+								</div>
+								<!-- Product price-->
+								8.990.000 đ
+							</div>
+						</div>
+						<!-- Product actions-->
+						<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+							<div class="text-center"><a class="btn btn-outline-dark mt-auto" href="./detail.html">Xem
+									thêm</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="col mb-5">
+					<div class="card h-100">
+						<!-- Sale badge-->
+						<div class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
+							Sale</div>
+						<!-- Product image-->
+						<img class="card-img-top" src="./img/sm-g990_s21fe_backfront_lv.webp" alt="..." />
+						<!-- Product details-->
+						<div class="card-body p-4">
+							<div class="text-center">
+								<!-- Product name-->
+								<h5 class="fw-bolder">Samsung Galaxy S21 FE 8GB 128GB</h5>
+								<!-- Product price-->
+								<span class="text-muted text-decoration-line-through">9.590.000đ</span>
+								<i class="text-danger">9.090.000₫</i>
+							</div>
+						</div>
+						<!-- Product actions-->
+						<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+							<div class="text-center"><a class="btn btn-outline-dark mt-auto" href="./detail.html">Xem
+									thêm</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="col mb-5">
+					<div class="card h-100">
+						<!-- Product image-->
+						<img class="card-img-top" src="./img/t_i_xu_ng_22__6.webp" alt="..." />
+						<!-- Product details-->
+						<div class="card-body p-4">
+							<div class="text-center">
+								<!-- Product name-->
+								<h5 class="fw-bolder">Xiaomi POCO X6 Pro 5G 8GB 256GB</h5>
+								<!-- Product price-->
+								8.190.000đ
+							</div>
+						</div>
+						<!-- Product actions-->
+						<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+							<div class="text-center"><a class="btn btn-outline-dark mt-auto" href="./detail.html">Xem
+									thêm</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="col mb-5">
+					<div class="card h-100">
+						<!-- Sale badge-->
+						<div class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
+							Sale</div>
+						<!-- Product image-->
+						<img class="card-img-top" src="./img/xiaomi-redmi-note-12-pro-5g.webp" alt="..." />
+						<!-- Product details-->
+						<div class="card-body p-4">
+							<div class="text-center">
+								<!-- Product name-->
+								<h5 class="fw-bolder">Xiaomi Redmi Note 12 Pro 5G</h5>
+								<!-- Product reviews-->
+								<div class="d-flex justify-content-center small text-warning mb-2">
+									<div class="bi-star-fill"></div>
+									<div class="bi-star-fill"></div>
+									<div class="bi-star-fill"></div>
+									<div class="bi-star-fill"></div>
+									<div class="bi-star-fill"></div>
+								</div>
+								<!-- Product price-->
+								<span class="text-muted text-decoration-line-through">7.490.000đ</span>
+								<i class="text-danger">6.990.000đ</i>
+							</div>
+						</div>
+						<!-- Product actions-->
+						<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+							<div class="text-center"><a class="btn btn-outline-dark mt-auto" href="./detail.html">Xem
+									thêm</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="col mb-5">
+					<div class="card h-100">
+						<!-- Product image-->
+						<img class="card-img-top" src="./img/xiaomi-redmi-note-13-pro-plus_9_.webp" alt="..." />
+						<!-- Product details-->
+						<div class="card-body p-4">
+							<div class="text-center">
+								<!-- Product name-->
+								<h5 class="fw-bolder">Xiaomi Redmi Note 13 Pro Plus 5G 8GB 256GB</h5>
+								<!-- Product reviews-->
+								<div class="d-flex justify-content-center small text-warning mb-2">
+									<div class="bi-star-fill"></div>
+									<div class="bi-star-fill"></div>
+									<div class="bi-star-fill"></div>
+									<div class="bi-star-fill"></div>
+									<div class="bi-star-fill"></div>
+								</div>
+								<!-- Product price-->
+								10.490.000đ
+							</div>
+						</div>
+						<!-- Product actions-->
+						<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+							<div class="text-center"><a class="btn btn-outline-dark mt-auto" href="./detail.html">Xem
+									thêm</a></div>
+						</div>
+					</div>
+				</div>
 			</div>
-		</section>
-		<!-- Footer-->
-		<footer class="py-5 bg-dark">
-			<div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p></div>
-		</footer>
-		<!-- Bootstrap core JS-->
-		<!-- Core theme JS-->
-	</body>
+		</div>
+	</section>
+	<!-- Footer-->
+	<footer class="py-5 bg-dark">
+		<div class="container">
+			<p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p>
+		</div>
+	</footer>
+	<!-- Bootstrap core JS-->
+	<!-- Core theme JS-->
+</body>
+
 </html>
